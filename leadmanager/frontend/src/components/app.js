@@ -11,6 +11,7 @@ import Alerts from './layout/Alerts'
 import store from '../store'
 import Login from './accounts/Login'
 import Register from './accounts/Register'
+import Profile from './accounts/Profile'
 import PrivateRoute  from './commun/privateRoutes'
 import { loadUser } from '../actions/auth'
 
@@ -38,6 +39,7 @@ class App extends Component {
                                      <PrivateRoute exact path='/' component={Dashboard} />
                                      <Route exact path='/login' component={Login} />
                                      <Route exact path='/register' component={Register} />
+                                     <Route exact path='/profile' component={Profile} />
                                 </Switch>
                             </div>
                         </Fragment>
